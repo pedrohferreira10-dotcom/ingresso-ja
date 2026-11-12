@@ -5,11 +5,11 @@
    cores em hexadecimal, tamanhos em px, fonte Arial e nenhuma animação.
    A responsividade (media queries) fica no fim deste arquivo e não faz parte da aula. */
 
-/* Variaveis */
+/* VARIAVEIS: Declaração */
 :root {
-  --cor-primaria: var(--cor-primaria);
-  --cor-destaque: var(--cor-destaque);
-  --fonte-base: "Poppins", Arial, sans-serif;
+  --cor-primaria: #4B1E8C;
+  --cor-destaque: #FF7A1A;
+  --fonte-base: 'poppins', Arial, sans-serif;
 }
 
 /* RESET: zera as margens e o espaçamento padrão do navegador.
@@ -252,7 +252,7 @@ ol {
   border: none;
   background-color: transparent;
   color: #222222;
-  font-family: Arial, sans-serif;
+  font-family: var(--fonte-base);
   font-size: 16px;
   padding: 4px 0;
 }
@@ -426,7 +426,7 @@ ol {
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(75, 30, 140, 0.08);
   transition:
-    tranform 0.5s ease,
+    transform 0.5s ease,
     box-shadow 0.5s ease;
 }
 
@@ -737,7 +737,7 @@ ol {
   padding: 14px 16px;
   border: none;
   border-radius: 8px;
-  font-family: Arial, sans-serif;
+  font-family: var(--fonte-base);
   font-size: 16px;
 }
 
